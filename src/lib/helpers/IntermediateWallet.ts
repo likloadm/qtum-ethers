@@ -127,7 +127,7 @@ export class IntermediateWallet extends Signer implements ExternallyOwnedAccount
                     // not WIF format
                 }
 
-                const signingKey = new SigningKey(privateKey);
+//                const signingKey = new SigningKey(privateKey);
 //                defineReadOnly(this, "_signingKey", () => signingKey);
                 defineReadOnly(this, "_privateKey", () => privateKey);
                 defineReadOnly(this, "_publicKey", () => HDKey.privToPub(privateKey));
