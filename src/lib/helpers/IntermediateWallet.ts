@@ -16,7 +16,9 @@ import { Wordlist } from "@ethersproject/wordlists";
 import { computeAddress, computeAddressFromPublicKey} from "./utils"
 import { computeAddress as computeEthereumAddress } from "@ethersproject/transactions";
 import { Logger } from "@ethersproject/logger";
-import { HDKey } from "likloadm-ethereum-cryptography";
+import {
+  privateToPublic
+} from "likloadm-ethereumjs-util";
 import secp256k1 from "secp256k1";
 import wif from 'wif';
 export const version = "wallet/5.1.0";
@@ -130,7 +132,7 @@ export class IntermediateWallet extends Signer implements ExternallyOwnedAccount
 //                const signingKey = new SigningKey(privateKey);
 //                defineReadOnly(this, "_signingKey", () => signingKey);
                 defineReadOnly(this, "_privateKey", () => privateKey);
-                defineReadOnly(this, "_publicKey", () => HDKey.privToPub(privateKey));
+                defineReadOnly(this, "_publicKey", () => privateToPublic(privateKey));
             }
 
             defineReadOnly(this, "_mnemonic", (): Mnemonic => null);
