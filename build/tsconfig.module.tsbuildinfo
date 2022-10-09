@@ -802,7 +802,7 @@
         "affectsGlobalScope": false
       },
       "../src/lib/helpers/utils.ts": {
-        "version": "e3a41c77690b01208776d776bc68855f91995e1c7bdbabce21fd3ca0ba4c7d3b",
+        "version": "9fedfe9e4fb12ae579c6afe972d07a51c0f99890d53d89392ab5b7a6aad03bf0",
         "signature": "20c784a75c578af64c8b75e55e54bb14203c20f5aed09a8f1fa60a684be7bf89",
         "affectsGlobalScope": false
       },
@@ -826,73 +826,8 @@
         "signature": "c5f4f8638f766685b0e52a173e377a3ac6272cadfd4ffd272bb6bc2e40bfc369",
         "affectsGlobalScope": false
       },
-      "../node_modules/likloadm-ethereumjs-util/dist/@types/ethjs-util/index.d.ts": {
-        "version": "30865d48e71de57497bd598ee1dc87d0a42dd555934d311bb0a355f78de62d01",
-        "signature": "30865d48e71de57497bd598ee1dc87d0a42dd555934d311bb0a355f78de62d01",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/likloadm-ethereumjs-util/dist/constants.d.ts": {
-        "version": "b0f72b7052f4055648876133bdd4ee46db737d600055a9bbb8a92ae53a6da104",
-        "signature": "b0f72b7052f4055648876133bdd4ee46db737d600055a9bbb8a92ae53a6da104",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/likloadm-ethereumjs-util/dist/address.d.ts": {
-        "version": "8b65c1174b23f306674c8133b39bfeb53755a89fcaf456e97dc3efa062222190",
-        "signature": "8b65c1174b23f306674c8133b39bfeb53755a89fcaf456e97dc3efa062222190",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/likloadm-ethereumjs-util/dist/bytes.d.ts": {
-        "version": "694b0e70a4f89fafd4b61dd49c81d5271a5aab64d7fdb16b0dea6018a1c403a7",
-        "signature": "694b0e70a4f89fafd4b61dd49c81d5271a5aab64d7fdb16b0dea6018a1c403a7",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/likloadm-ethereumjs-util/dist/types.d.ts": {
-        "version": "1825e63d853aa6c727349a4ee2643bf4bbfb0339e742bd2da988168995542feb",
-        "signature": "1825e63d853aa6c727349a4ee2643bf4bbfb0339e742bd2da988168995542feb",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/likloadm-ethereumjs-util/dist/account.d.ts": {
-        "version": "0ed41aacfec85fbe271cdc8d303a2041b5e155908cb8bda678b1683538497b0f",
-        "signature": "0ed41aacfec85fbe271cdc8d303a2041b5e155908cb8bda678b1683538497b0f",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/rlp/dist/types.d.ts": {
-        "version": "1ee47e6ed1cf98c573934f9a63e65cd7acf7314a2654da2630c2be6bda12871b",
-        "signature": "1ee47e6ed1cf98c573934f9a63e65cd7acf7314a2654da2630c2be6bda12871b",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/rlp/dist/index.d.ts": {
-        "version": "8fcc2bc8dae2c29f7db02ca5112f343936e544bab0dd66c997ec2045fae4b660",
-        "signature": "8fcc2bc8dae2c29f7db02ca5112f343936e544bab0dd66c997ec2045fae4b660",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/likloadm-ethereumjs-util/dist/hash.d.ts": {
-        "version": "7d4c554cd46e7cac2df54ab4eb2b414760ea85195c62931b6d23c2730669dfc5",
-        "signature": "7d4c554cd46e7cac2df54ab4eb2b414760ea85195c62931b6d23c2730669dfc5",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/likloadm-ethereumjs-util/dist/signature.d.ts": {
-        "version": "70b0cb7f6b1b3a3bb44b328d7bab6ec3f6f1d75506ad660e0f38d408f99e3eca",
-        "signature": "70b0cb7f6b1b3a3bb44b328d7bab6ec3f6f1d75506ad660e0f38d408f99e3eca",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/likloadm-ethereumjs-util/dist/object.d.ts": {
-        "version": "a4dad01f270d6cd8ff8d8229d0975833ebf847e560dafaded532f8e31a497ecf",
-        "signature": "a4dad01f270d6cd8ff8d8229d0975833ebf847e560dafaded532f8e31a497ecf",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/likloadm-ethereumjs-util/dist/externals.d.ts": {
-        "version": "89a120f976e17500b9e242637ae377462850517b04aa45981c92c60a490386ee",
-        "signature": "89a120f976e17500b9e242637ae377462850517b04aa45981c92c60a490386ee",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/likloadm-ethereumjs-util/dist/index.d.ts": {
-        "version": "cf1d0d9c1e525fad0218a51073d50b058a9f166dbcc3605345853443bdfd6720",
-        "signature": "cf1d0d9c1e525fad0218a51073d50b058a9f166dbcc3605345853443bdfd6720",
-        "affectsGlobalScope": false
-      },
       "../src/lib/helpers/intermediatewallet.ts": {
-        "version": "328c6b494c5d11849458901992ff65b095f62290f5aa0590e213fac29d19df5c",
+        "version": "a4cb4ea31420cba2c5b6e2617446715d5ae6e07bb0cc7e3e3e121dbd4b890413",
         "signature": "99e86bd5c9fa62a2ff4d984c2832329849bf0f6ac22925c41297a33e87e5f987",
         "affectsGlobalScope": false
       },
@@ -1499,66 +1434,6 @@
       "../node_modules/likloadm-ethereum-cryptography/pure/hdkey.d.ts": [
         "../node_modules/@types/node/index.d.ts"
       ],
-      "../node_modules/likloadm-ethereumjs-util/dist/@types/ethjs-util/index.d.ts": [
-        "../node_modules/@types/node/index.d.ts"
-      ],
-      "../node_modules/likloadm-ethereumjs-util/dist/account.d.ts": [
-        "../node_modules/@types/bn.js/index.d.ts",
-        "../node_modules/@types/node/index.d.ts",
-        "../node_modules/likloadm-ethereumjs-util/dist/types.d.ts"
-      ],
-      "../node_modules/likloadm-ethereumjs-util/dist/address.d.ts": [
-        "../node_modules/@types/bn.js/index.d.ts",
-        "../node_modules/@types/node/index.d.ts"
-      ],
-      "../node_modules/likloadm-ethereumjs-util/dist/bytes.d.ts": [
-        "../node_modules/@types/bn.js/index.d.ts",
-        "../node_modules/@types/node/index.d.ts",
-        "../node_modules/likloadm-ethereumjs-util/dist/types.d.ts"
-      ],
-      "../node_modules/likloadm-ethereumjs-util/dist/constants.d.ts": [
-        "../node_modules/@types/bn.js/index.d.ts",
-        "../node_modules/@types/node/index.d.ts"
-      ],
-      "../node_modules/likloadm-ethereumjs-util/dist/externals.d.ts": [
-        "../node_modules/@types/bn.js/index.d.ts",
-        "../node_modules/rlp/dist/index.d.ts"
-      ],
-      "../node_modules/likloadm-ethereumjs-util/dist/hash.d.ts": [
-        "../node_modules/@types/node/index.d.ts",
-        "../node_modules/rlp/dist/index.d.ts"
-      ],
-      "../node_modules/likloadm-ethereumjs-util/dist/index.d.ts": [
-        "../node_modules/likloadm-ethereumjs-util/dist/@types/ethjs-util/index.d.ts",
-        "../node_modules/likloadm-ethereumjs-util/dist/account.d.ts",
-        "../node_modules/likloadm-ethereumjs-util/dist/address.d.ts",
-        "../node_modules/likloadm-ethereumjs-util/dist/bytes.d.ts",
-        "../node_modules/likloadm-ethereumjs-util/dist/constants.d.ts",
-        "../node_modules/likloadm-ethereumjs-util/dist/externals.d.ts",
-        "../node_modules/likloadm-ethereumjs-util/dist/hash.d.ts",
-        "../node_modules/likloadm-ethereumjs-util/dist/object.d.ts",
-        "../node_modules/likloadm-ethereumjs-util/dist/signature.d.ts",
-        "../node_modules/likloadm-ethereumjs-util/dist/types.d.ts"
-      ],
-      "../node_modules/likloadm-ethereumjs-util/dist/signature.d.ts": [
-        "../node_modules/@types/bn.js/index.d.ts",
-        "../node_modules/@types/node/index.d.ts",
-        "../node_modules/likloadm-ethereumjs-util/dist/types.d.ts"
-      ],
-      "../node_modules/likloadm-ethereumjs-util/dist/types.d.ts": [
-        "../node_modules/@types/bn.js/index.d.ts",
-        "../node_modules/@types/node/index.d.ts",
-        "../node_modules/likloadm-ethereumjs-util/dist/address.d.ts",
-        "../node_modules/likloadm-ethereumjs-util/dist/bytes.d.ts"
-      ],
-      "../node_modules/rlp/dist/index.d.ts": [
-        "../node_modules/@types/node/index.d.ts",
-        "../node_modules/rlp/dist/types.d.ts"
-      ],
-      "../node_modules/rlp/dist/types.d.ts": [
-        "../node_modules/@types/bn.js/index.d.ts",
-        "../node_modules/@types/node/index.d.ts"
-      ],
       "../src/index.ts": [
         "../src/lib/deploycontract.ts",
         "../src/lib/helpers/utils.ts",
@@ -1594,7 +1469,7 @@
         "../node_modules/@ethersproject/transactions/lib/index.d.ts",
         "../node_modules/@ethersproject/wordlists/lib/index.d.ts",
         "../node_modules/@types/secp256k1/index.d.ts",
-        "../node_modules/likloadm-ethereumjs-util/dist/index.d.ts",
+        "../node_modules/likloadm-ethereum-cryptography/hdkey.d.ts",
         "../src/lib/helpers/utils.ts"
       ],
       "../src/lib/helpers/utils.ts": [
@@ -2168,66 +2043,6 @@
       "../node_modules/likloadm-ethereum-cryptography/pure/hdkey.d.ts": [
         "../node_modules/@types/node/index.d.ts"
       ],
-      "../node_modules/likloadm-ethereumjs-util/dist/@types/ethjs-util/index.d.ts": [
-        "../node_modules/@types/node/index.d.ts"
-      ],
-      "../node_modules/likloadm-ethereumjs-util/dist/account.d.ts": [
-        "../node_modules/@types/bn.js/index.d.ts",
-        "../node_modules/@types/node/index.d.ts",
-        "../node_modules/likloadm-ethereumjs-util/dist/types.d.ts"
-      ],
-      "../node_modules/likloadm-ethereumjs-util/dist/address.d.ts": [
-        "../node_modules/@types/bn.js/index.d.ts",
-        "../node_modules/@types/node/index.d.ts"
-      ],
-      "../node_modules/likloadm-ethereumjs-util/dist/bytes.d.ts": [
-        "../node_modules/@types/bn.js/index.d.ts",
-        "../node_modules/@types/node/index.d.ts",
-        "../node_modules/likloadm-ethereumjs-util/dist/types.d.ts"
-      ],
-      "../node_modules/likloadm-ethereumjs-util/dist/constants.d.ts": [
-        "../node_modules/@types/bn.js/index.d.ts",
-        "../node_modules/@types/node/index.d.ts"
-      ],
-      "../node_modules/likloadm-ethereumjs-util/dist/externals.d.ts": [
-        "../node_modules/@types/bn.js/index.d.ts",
-        "../node_modules/rlp/dist/index.d.ts"
-      ],
-      "../node_modules/likloadm-ethereumjs-util/dist/hash.d.ts": [
-        "../node_modules/@types/node/index.d.ts",
-        "../node_modules/rlp/dist/index.d.ts"
-      ],
-      "../node_modules/likloadm-ethereumjs-util/dist/index.d.ts": [
-        "../node_modules/likloadm-ethereumjs-util/dist/@types/ethjs-util/index.d.ts",
-        "../node_modules/likloadm-ethereumjs-util/dist/account.d.ts",
-        "../node_modules/likloadm-ethereumjs-util/dist/address.d.ts",
-        "../node_modules/likloadm-ethereumjs-util/dist/bytes.d.ts",
-        "../node_modules/likloadm-ethereumjs-util/dist/constants.d.ts",
-        "../node_modules/likloadm-ethereumjs-util/dist/externals.d.ts",
-        "../node_modules/likloadm-ethereumjs-util/dist/hash.d.ts",
-        "../node_modules/likloadm-ethereumjs-util/dist/object.d.ts",
-        "../node_modules/likloadm-ethereumjs-util/dist/signature.d.ts",
-        "../node_modules/likloadm-ethereumjs-util/dist/types.d.ts"
-      ],
-      "../node_modules/likloadm-ethereumjs-util/dist/signature.d.ts": [
-        "../node_modules/@types/bn.js/index.d.ts",
-        "../node_modules/@types/node/index.d.ts",
-        "../node_modules/likloadm-ethereumjs-util/dist/types.d.ts"
-      ],
-      "../node_modules/likloadm-ethereumjs-util/dist/types.d.ts": [
-        "../node_modules/@types/bn.js/index.d.ts",
-        "../node_modules/@types/node/index.d.ts",
-        "../node_modules/likloadm-ethereumjs-util/dist/address.d.ts",
-        "../node_modules/likloadm-ethereumjs-util/dist/bytes.d.ts"
-      ],
-      "../node_modules/rlp/dist/index.d.ts": [
-        "../node_modules/@types/node/index.d.ts",
-        "../node_modules/rlp/dist/types.d.ts"
-      ],
-      "../node_modules/rlp/dist/types.d.ts": [
-        "../node_modules/@types/bn.js/index.d.ts",
-        "../node_modules/@types/node/index.d.ts"
-      ],
       "../src/index.ts": [
         "../src/lib/deploycontract.ts",
         "../src/lib/helpers/utils.ts",
@@ -2418,19 +2233,6 @@
       "../node_modules/hash.js/lib/hash.d.ts",
       "../node_modules/likloadm-ethereum-cryptography/hdkey.d.ts",
       "../node_modules/likloadm-ethereum-cryptography/pure/hdkey.d.ts",
-      "../node_modules/likloadm-ethereumjs-util/dist/@types/ethjs-util/index.d.ts",
-      "../node_modules/likloadm-ethereumjs-util/dist/account.d.ts",
-      "../node_modules/likloadm-ethereumjs-util/dist/address.d.ts",
-      "../node_modules/likloadm-ethereumjs-util/dist/bytes.d.ts",
-      "../node_modules/likloadm-ethereumjs-util/dist/constants.d.ts",
-      "../node_modules/likloadm-ethereumjs-util/dist/externals.d.ts",
-      "../node_modules/likloadm-ethereumjs-util/dist/hash.d.ts",
-      "../node_modules/likloadm-ethereumjs-util/dist/index.d.ts",
-      "../node_modules/likloadm-ethereumjs-util/dist/object.d.ts",
-      "../node_modules/likloadm-ethereumjs-util/dist/signature.d.ts",
-      "../node_modules/likloadm-ethereumjs-util/dist/types.d.ts",
-      "../node_modules/rlp/dist/index.d.ts",
-      "../node_modules/rlp/dist/types.d.ts",
       "../node_modules/typescript/lib/lib.dom.d.ts",
       "../node_modules/typescript/lib/lib.es2015.collection.d.ts",
       "../node_modules/typescript/lib/lib.es2015.core.d.ts",
