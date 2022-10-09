@@ -217,10 +217,8 @@ function encodeSig(signature: Uint8Array, hashType: number): Buffer {
 
     const hashTypeBuffer = Buffer.from([hashType]);
     const bufferSignature = Buffer.from(signature);
-    const r = toDER(bufferSignature.slice(0, 32));
-    const s = toDER(bufferSignature.slice(32, 64));
 
-    return Buffer.concat([encode(r, s), hashTypeBuffer]);
+    return Buffer.concat([bufferSignature, hashTypeBuffer]);
 }
 
 
@@ -263,7 +261,7 @@ export async function signp2pkhWith(tx: any, vindex: number, signer: Function): 
     let sig = await signer(new Uint8Array(secondHash));
 
     // encode sig
-    return encodeSig(sig.signature, GLOBAL_VARS.HASH_TYPE);
+    return encodeSig(sig, GLOBAL_VARS.HASH_TYPE);
 }
 
 export function p2pkScriptSig(sig: any): Buffer {
