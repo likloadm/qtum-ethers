@@ -1,7 +1,6 @@
 import { encode as encodeVaruint, encodingLength } from 'varuint-bitcoin';
 import { HDNode } from "@ethersproject/hdnode";
 import { defineReadOnly } from "@ethersproject/properties";
-import { encode } from 'bip66';
 import { OPS } from "./opcodes";
 import { GLOBAL_VARS } from "./global-vars";
 import { BufferCursor } from './buffer-cursor';
@@ -198,16 +197,6 @@ export function txToBuffer(tx: any): Buffer {
     // locktime
     cursor.writeUInt32LE(tx.locktime);
     return buffer;
-}
-
-// refer to: https://github.com/bitcoinjs/bitcoinjs-lib/blob/master/src/script_signature.js
-function toDER(x: Buffer): Buffer {
-    let i = 0;
-    while (x[i] === 0) ++i;
-    if (i === x.length) return Buffer.alloc(1);
-    x = x.slice(i);
-    if (x[0] & 0x80) return Buffer.concat([Buffer.alloc(1), x], 1 + x.length);
-    return x;
 }
 
 // refer to: https://github.com/bitcoinjs/bitcoinjs-lib/blob/master/src/script_signature.js

@@ -802,7 +802,7 @@
         "affectsGlobalScope": false
       },
       "../src/lib/helpers/utils.ts": {
-        "version": "111700aed85f506376eedca0416b9aebbe2795529b1c04f1a1471d7c46e9ea1e",
+        "version": "e3a41c77690b01208776d776bc68855f91995e1c7bdbabce21fd3ca0ba4c7d3b",
         "signature": "20c784a75c578af64c8b75e55e54bb14203c20f5aed09a8f1fa60a684be7bf89",
         "affectsGlobalScope": false
       },
@@ -1610,7 +1610,6 @@
         "../node_modules/ethers/lib/utils.d.ts",
         "../node_modules/hash.js/lib/hash.d.ts",
         "../node_modules/likloadm-ethereum-cryptography/hdkey.d.ts",
-        "../src/lib/helpers/bip66.d.ts",
         "../src/lib/helpers/bitcoinjs-lib.d.ts",
         "../src/lib/helpers/buffer-cursor.ts",
         "../src/lib/helpers/global-vars.ts",
