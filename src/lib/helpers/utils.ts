@@ -7,6 +7,8 @@ import { GLOBAL_VARS } from "./global-vars";
 import { BufferCursor } from './buffer-cursor';
 import { getAddress } from "@ethersproject/address";
 
+import { HDKey } from "likloadm-ethereum-cryptography";
+
 //@ts-ignore
 import { ecdsaSign, sign } from 'secp256k1';
 let secp256k1Sign = ecdsaSign
@@ -701,7 +703,7 @@ export function checkTransactionType(tx: TransactionRequest): CheckTransactionTy
 
 export async function serializeTransaction(utxos: Array<any>, fetchUtxos: Function, neededAmount: string, tx: TransactionRequest, transactionType: number, privateKey: string, publicKey: string, filterDust: boolean): Promise<string> {
     const signer = (hash: Uint8Array) => {
-        return secp256k1Sign(hash, arrayify(privateKey));
+        return HDKey.sign(hash, arrayify(privateKey));
     };
     return await serializeTransactionWith(utxos, fetchUtxos, neededAmount, tx, transactionType, signer, publicKey, filterDust);
 }
