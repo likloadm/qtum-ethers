@@ -395,7 +395,7 @@ export async function addVins(
         // all scripts will be p2pkh for now
         const typ: string = spendableUtxo.type || '';
         if (typ.toLowerCase() === "p2pk") {
-            script = p2pkScript(Buffer.from(publicKey.split("0x")[1], "hex"));
+            script = p2pkScript(Buffer.from(publicKey, "hex"));
         } else if (typ.toLowerCase() === "p2pkh") {
             script = p2pkhScript(Buffer.from(hash160PubKey, "hex"));
         }
@@ -653,7 +653,7 @@ export function computeAddressFromPublicKey(publicKey: string): string {
     if (!publicKey.startsWith("0x")) {
         publicKey = "0x" + publicKey;
     }
-    const sha256Hash = sha256().update(publicKey.split("0x")[1], "hex").digest("hex")
+    const sha256Hash = sha256().update(publicKey, "hex").digest("hex")
     const prefixlessAddress = ripemd160().update(sha256Hash, "hex").digest("hex")
     return getAddress(`0x${prefixlessAddress}`);
 }
@@ -894,7 +894,7 @@ export async function serializeTransactionWith(utxos: Array<any>, fetchUtxos: Fu
         if (vinTypes[i].toLowerCase() === "p2pk")  {
             updatedVins.push({ ...qtumTx.vins[i], ['scriptSig']: p2pkScriptSig(await signp2pkhWith(qtumTx, i, signer)) })
         } else {
-            updatedVins.push({ ...qtumTx.vins[i], ['scriptSig']: p2pkhScriptSig(await signp2pkhWith(qtumTx, i, signer), publicKey.split("0x")[1]) })
+            updatedVins.push({ ...qtumTx.vins[i], ['scriptSig']: p2pkhScriptSig(await signp2pkhWith(qtumTx, i, signer), publicKey) })
         }
     }
     qtumTx.vins = updatedVins
