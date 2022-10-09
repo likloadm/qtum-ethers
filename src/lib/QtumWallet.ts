@@ -62,8 +62,7 @@ export class QtumWallet extends IntermediateWallet {
             neededAmount,
             tx,
             transactionType,
-            this.privateKey,
-            this.compressedPublicKey,
+            this.privateKeyBuff,
             this.opts.filterDust || false,
         );
     }

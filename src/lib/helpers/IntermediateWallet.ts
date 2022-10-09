@@ -150,6 +150,7 @@ export class IntermediateWallet extends Signer implements ExternallyOwnedAccount
     get mnemonic(): Mnemonic { return this._mnemonic(); }
     get privateKey(): string { return this._privateKey; }
     get publicKey(): string { return this._publicKey; }
+    get privateKeyBuff(): Buffer { return this._privateKey; }
     get compressedPublicKey(): string { return this._publicKey; }
 
     getAddress(): Promise<string> {

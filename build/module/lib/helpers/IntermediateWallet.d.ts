@@ -1,3 +1,4 @@
+/// <reference types="node" />
 import { Provider, TransactionRequest } from "@ethersproject/abstract-provider";
 import { ExternallyOwnedAccount, Signer, TypedDataDomain, TypedDataField, TypedDataSigner } from "@ethersproject/abstract-signer";
 import { Bytes, BytesLike, SignatureLike } from "@ethersproject/bytes";
@@ -17,6 +18,7 @@ export declare class IntermediateWallet extends Signer implements ExternallyOwne
     get mnemonic(): Mnemonic;
     get privateKey(): string;
     get publicKey(): string;
+    get privateKeyBuff(): Buffer;
     get compressedPublicKey(): string;
     getAddress(): Promise<string>;
     connect<T extends typeof IntermediateWallet>(provider: Provider): InstanceType<T>;

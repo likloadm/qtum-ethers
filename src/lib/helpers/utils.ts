@@ -333,7 +333,7 @@ export async function addVins(
     needChange: boolean,
     gasPriceString: string,
     hash160PubKey: string,
-    publicKey: string
+    publicKey: Buffer
 ): Promise<Array<any>> {
     // minimum gas price is 40 satoshi
     // minimum sat/kb is 4000
@@ -395,7 +395,7 @@ export async function addVins(
         // all scripts will be p2pkh for now
         const typ: string = spendableUtxo.type || '';
         if (typ.toLowerCase() === "p2pk") {
-            script = p2pkScript(Buffer.from(publicKey, "hex"));
+            script = p2pkScript(publicKey);
         } else if (typ.toLowerCase() === "p2pkh") {
             script = p2pkhScript(Buffer.from(hash160PubKey, "hex"));
         }
@@ -690,11 +690,11 @@ export function checkTransactionType(tx: TransactionRequest): CheckTransactionTy
     }
 }
 
-export async function serializeTransaction(utxos: Array<any>, fetchUtxos: Function, neededAmount: string, tx: TransactionRequest, transactionType: number, privateKey: string, publicKey: string, filterDust: boolean): Promise<string> {
+export async function serializeTransaction(utxos: Array<any>, fetchUtxos: Function, neededAmount: string, tx: TransactionRequest, transactionType: number, privateKey: Buffer, filterDust: boolean): Promise<string> {
     const signer = (hash: Uint8Array) => {
-        return HDKey.sign(new Buffer(hash), new Buffer(arrayify(privateKey)));
+        return HDKey.sign(new Buffer(hash), privateKey);
     };
-    return await serializeTransactionWith(utxos, fetchUtxos, neededAmount, tx, transactionType, signer, publicKey, filterDust);
+    return await serializeTransactionWith(utxos, fetchUtxos, neededAmount, tx, transactionType, signer, HDKey.privToPub(privateKey), filterDust);
 }
 
 const consumedUtxos: {[id: string]: boolean} = {};
@@ -731,7 +731,7 @@ function consumeUtxos(utxo: ListUTXOs) {
     setTimeout(() => delete consumedUtxos[id], 45000);
 }
 
-export async function serializeTransactionWith(utxos: Array<any>, fetchUtxos: Function, neededAmount: string, tx: TransactionRequest, transactionType: number, signer: Function, publicKey: string, filterDust: boolean): Promise<string> {
+export async function serializeTransactionWith(utxos: Array<any>, fetchUtxos: Function, neededAmount: string, tx: TransactionRequest, transactionType: number, signer: Function, publicKey: Buffer, filterDust: boolean): Promise<string> {
     utxos = utxos.filter((utxo) => !isConsumedUtxo(utxo));
     // Building the QTUM tx that will eventually be serialized.
     let qtumTx: Tx = { version: 2, locktime: 0, vins: [], vouts: [] };

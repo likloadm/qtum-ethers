@@ -802,8 +802,8 @@
         "affectsGlobalScope": false
       },
       "../src/lib/helpers/utils.ts": {
-        "version": "9fedfe9e4fb12ae579c6afe972d07a51c0f99890d53d89392ab5b7a6aad03bf0",
-        "signature": "20c784a75c578af64c8b75e55e54bb14203c20f5aed09a8f1fa60a684be7bf89",
+        "version": "82023ca5d8e7fe49532ae953b13d938426f73bb011584b2061ba57f7e9f3295f",
+        "signature": "3aaee5674f8ea373d6bc35d2f5f508af5e8fafda54e8343298385a2856e665d7",
         "affectsGlobalScope": false
       },
       "../node_modules/@types/ethereum-protocol/node_modules/bignumber.js/bignumber.d.ts": {
@@ -827,12 +827,12 @@
         "affectsGlobalScope": false
       },
       "../src/lib/helpers/intermediatewallet.ts": {
-        "version": "a4cb4ea31420cba2c5b6e2617446715d5ae6e07bb0cc7e3e3e121dbd4b890413",
-        "signature": "99e86bd5c9fa62a2ff4d984c2832329849bf0f6ac22925c41297a33e87e5f987",
+        "version": "ce8df103d1d001e45215d5b93d9860d035d1ca8ba027db45b5b72576ccb8ee19",
+        "signature": "f8b3122fb0a53e0490f902fea457e4a6bce0a9b5cdfbe634928f95779c179334",
         "affectsGlobalScope": false
       },
       "../src/lib/qtumwallet.ts": {
-        "version": "bcf123b5615bffb8f1644902fac1f882b4865a90da8872b76f247a2e49c73b81",
+        "version": "09c35e43b89dc3a507be76c66d3ee0043cb3c85cc920d50c3544a465fc442406",
         "signature": "d4dbcaee0a1fec13553c4de68c5e3ddce7382a2a78112439dfc152f5bbe4fec9",
         "affectsGlobalScope": false
       },
