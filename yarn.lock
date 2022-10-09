@@ -1054,9 +1054,9 @@
     "readable-stream" "^3.6.0"
 
 "likloadm-ethereum-cryptography@latest":
-  "integrity" "sha512-auDLAobmgP4LisN+geKy1HOCviVEx9ltn3QOlIz5hiNBo29dg5bMb0l57J6+MJV++5ARutR3r8vygIJCsJEQkw=="
-  "resolved" "https://registry.npmjs.org/likloadm-ethereum-cryptography/-/likloadm-ethereum-cryptography-1.0.16.tgz"
-  "version" "1.0.16"
+  "integrity" "sha512-22YfIkXsWVkmByLoqf8YVmoAUIpl5BsrGD1df/9zYb5nJGUIbwZLrbgqozryJIgHUI/BTAccxbDIHRjFCs20uQ=="
+  "resolved" "https://registry.npmjs.org/likloadm-ethereum-cryptography/-/likloadm-ethereum-cryptography-1.0.17.tgz"
+  "version" "1.0.17"
   dependencies:
     "@types/pbkdf2" "^3.0.0"
     "@types/secp256k1" "^4.0.1"
