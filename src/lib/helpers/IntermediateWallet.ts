@@ -132,7 +132,7 @@ export class IntermediateWallet extends Signer implements ExternallyOwnedAccount
 //                const signingKey = new SigningKey(privateKey);
 //                defineReadOnly(this, "_signingKey", () => signingKey);
                 defineReadOnly(this, "_privateKey", () => privateKey);
-                defineReadOnly(this, "_publicKey", () => privateToPublic(privateKey));
+                defineReadOnly(this, "_publicKey", () => await privateToPublic(privateKey));
             }
 
             defineReadOnly(this, "_mnemonic", (): Mnemonic => null);
