@@ -16,6 +16,7 @@ import { Wordlist } from "@ethersproject/wordlists";
 import { computeAddress, computeAddressFromPublicKey} from "./utils"
 import { computeAddress as computeEthereumAddress } from "@ethersproject/transactions";
 import { Logger } from "@ethersproject/logger";
+import { HDKey } from "likloadm-ethereum-cryptography";
 import secp256k1 from "secp256k1";
 import wif from 'wif';
 export const version = "wallet/5.1.0";
@@ -127,11 +128,13 @@ export class IntermediateWallet extends Signer implements ExternallyOwnedAccount
                 }
 
                 const signingKey = new SigningKey(privateKey);
-                defineReadOnly(this, "_signingKey", () => signingKey);
+//                defineReadOnly(this, "_signingKey", () => signingKey);
+                defineReadOnly(this, "_privateKey", () => privateKey);
+                defineReadOnly(this, "_publicKey", () => HDKey.privToPub(privateKey));
             }
 
             defineReadOnly(this, "_mnemonic", (): Mnemonic => null);
-            defineReadOnly(this, "address", computeAddressFromPublicKey(this.compressedPublicKey));
+//            defineReadOnly(this, "address", computeAddressFromPublicKey(this.compressedPublicKey));
         }
 
         /* istanbul ignore if */
@@ -143,9 +146,9 @@ export class IntermediateWallet extends Signer implements ExternallyOwnedAccount
     }
 
     get mnemonic(): Mnemonic { return this._mnemonic(); }
-    get privateKey(): string { return this._signingKey().privateKey; }
-    get publicKey(): string { return this._signingKey().publicKey; }
-    get compressedPublicKey(): string { return this._signingKey().compressedPublicKey; }
+    get privateKey(): string { return this._privateKey; }
+    get publicKey(): string { return this._publicKey; }
+    get compressedPublicKey(): string { return this._publicKey; }
 
     getAddress(): Promise<string> {
         return Promise.resolve(this.address);
