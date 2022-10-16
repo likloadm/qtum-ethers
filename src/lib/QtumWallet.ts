@@ -76,12 +76,12 @@ export class QtumWallet extends IntermediateWallet {
           throw new Error("No provider set, cannot sign transaction");
         }
         // @ts-ignore
-        if (this.provider.isClientVersionGreaterThanEqualTo) {
-            // @ts-ignore
-            gasBugFixed = await this.provider.isClientVersionGreaterThanEqualTo(0, 2, 0);
-        } else {
-            throw new Error("Must use QtumProvider");
-        }
+//        if (this.provider.isClientVersionGreaterThanEqualTo) {
+//            // @ts-ignore
+//            gasBugFixed = await this.provider.isClientVersionGreaterThanEqualTo(0, 2, 0);
+//        } else {
+//            throw new Error("Must use QtumProvider");
+//        }
 
         const augustFirst2022 = 1659330000000;
         const mayThirtith2022 = 1653886800000;

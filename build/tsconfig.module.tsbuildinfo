@@ -832,7 +832,7 @@
         "affectsGlobalScope": false
       },
       "../src/lib/qtumwallet.ts": {
-        "version": "09c35e43b89dc3a507be76c66d3ee0043cb3c85cc920d50c3544a465fc442406",
+        "version": "eb35b9987f58566007cba40002a45ca3dcd12da48f9fda09aaffd2210b62bada",
         "signature": "d4dbcaee0a1fec13553c4de68c5e3ddce7382a2a78112439dfc152f5bbe4fec9",
         "affectsGlobalScope": false
       },
